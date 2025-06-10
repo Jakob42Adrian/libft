@@ -1,24 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jakobadrian <jakobadrian@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jadrian <jadrian@student.42wolfsburg.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/10 13:31:33 by jadrian           #+#    #+#             */
-/*   Updated: 2025/06/11 00:06:15 by jakobadrian      ###   ########.fr       */
+/*   Created: 2025/06/10 02:10:13 by jadrian           #+#    #+#             */
+/*   Updated: 2025/06/10 02:32:53 by jadrian          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void *ft_memset(void *b, int c, size_t len)
+char *ft_strrchr(const char *s, int c)
 {
-    unsigned char *temp;
+	int i = 0;
+	const char *last = NULL;
 
-    temp = (unsigned char *)b;
-    while (len--)
-        *temp++ = (unsigned char)c;
-    return (b);
+	while (s[i])
+	{
+		if(s[i] == (char)c)
+			last = &s[i];
+		i++;
+	}
+	if (c == '\0')
+		return ((char *)&s[i]);
 
+	return ((char *)last);
 }

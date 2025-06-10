@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jakobadrian <jakobadrian@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jadrian <jadrian@student.42wolfsburg.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/10 13:31:33 by jadrian           #+#    #+#             */
-/*   Updated: 2025/06/11 00:06:15 by jakobadrian      ###   ########.fr       */
+/*   Created: 2025/06/10 00:47:04 by jadrian           #+#    #+#             */
+/*   Updated: 2025/06/10 00:48:58 by jadrian          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-
-void *ft_memset(void *b, int c, size_t len)
+int ft_isascii(int c)
 {
-    unsigned char *temp;
-
-    temp = (unsigned char *)b;
-    while (len--)
-        *temp++ = (unsigned char)c;
-    return (b);
-
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }
