@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadrian <jadrian@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jakobadrian <jakobadrian@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 13:16:40 by jadrian           #+#    #+#             */
-/*   Updated: 2025/06/10 13:49:01 by jadrian          ###   ########.fr       */
+/*   Updated: 2025/06/11 03:15:39 by jakobadrian      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
 
 int ft_tolower(int c)
 {

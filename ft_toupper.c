@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadrian <jadrian@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jakobadrian <jakobadrian@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 13:20:01 by jadrian           #+#    #+#             */
-/*   Updated: 2025/06/10 13:49:01 by jadrian          ###   ########.fr       */
+/*   Updated: 2025/06/11 03:15:57 by jakobadrian      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int ft_toupper(int c)
 {
-    return ((c >= 'a' && c <= 'z') ? (c - 32) :c);
+    return ((c >= 'a' && c <= 'z') ? (c - 32) : c);
 }
