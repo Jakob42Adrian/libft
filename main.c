@@ -6,12 +6,13 @@
 /*   By: jakobadrian <jakobadrian@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/09 18:07:19 by jadrian           #+#    #+#             */
-/*   Updated: 2025/06/11 03:21:25 by jakobadrian      ###   ########.fr       */
+/*   Updated: 2025/06/12 09:24:04 by jakobadrian      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "libft.h"
 
 int main(void)
@@ -72,5 +73,88 @@ int main(void)
     printf("ft_memmove: %s\n", buffer3);
     ft_memmove(NULL, NULL, 0); // erlaubt
 
+    printf("\n=== ft_bzero ===\n");
+    char b1[10] = "abcdefghi";
+    char b2[10] = "abcdefghi";
+
+    ft_bzero(b1 + 2, 3);
+    bzero(b2 + 2, 3);
+
+    printf("ft_bzero: %s\n", b1);
+    printf("orig_bzero: %s\n", b2);
+
+    printf("\n=== ft_memchr ===\n");
+    char mem[] = "42Wolfsburg!";
+    char *m1 = ft_memchr(mem, 'W', 10);
+    char *m2 = ft_memchr(mem, 'z', 10);
+    char *m3 = ft_memchr(mem, '\0', 20);
+
+    printf("Suche nach 'W': %s\n", m1);         // → Wolfsburg!
+    printf("Suche nach 'z': %p\n", (void *)m2); // → NULL
+    printf("Nullterminator gefunden bei: %p\n", (void *)m3);
+
+    printf("\n=== ft_memcmp ===\n");
+
+    char a[] = "42Wolfsburg";
+    char b[] = "42Wolfsburg";
+    char c[] = "42WolfsBurg";
+    char d[] = "42Wol";
+
+    printf("Vergleich a vs b: %d\n", ft_memcmp(a, b, 11)); // → 0
+    printf("Vergleich a vs c: %d\n", ft_memcmp(a, c, 11)); // → > 0 (s vs B)
+    printf("Vergleich a vs d: %d\n", ft_memcmp(a, d, 4));  // → 0
+    printf("Vergleich a vs d: %d\n", ft_memcmp(a, d, 6));  // → != 0
+
+    printf("\n=== ft_atoi ===\n");
+
+    printf("\"42\" = %d\n", ft_atoi("42"));                         // 42
+    printf("\"   -123abc\" = %d\n", ft_atoi("   -123abc"));         // -123
+    printf("\"+007\" = %d\n", ft_atoi("+007"));                     // 7
+    printf("\"  +0\" = %d\n", ft_atoi("  +0"));                     // 0
+    printf("\"abc\" = %d\n", ft_atoi("abc"));                       // 0
+    printf("\"   +2147483647\" = %d\n", ft_atoi("   +2147483647")); // INT_MAX
+    printf("\"   -2147483648\" = %d\n", ft_atoi("   -2147483648")); // INT_MIN
+
+    printf("\n=== ft_calloc ===\n");
+
+    int *arr = ft_calloc(5, sizeof(int));
+    if (arr)
+    {
+        for (int i = 0; i < 5; i++)
+            printf("arr[%d] = %d\n", i, arr[i]); // erwartet: alles 0
+        free(arr);
+    }
+    else
+        printf("ft_calloc returned NULL\n");
+
+    printf("\n=== ft_strdup ===\n");
+
+    // 1. Normaler String
+    const char *s1 = "42Wolfsburg";
+    char *dup1 = ft_strdup(s1);
+    printf("Original: \"%s\"\n", s1);
+    printf("Kopie   : \"%s\"\n", dup1);
+    free(dup1);
+
+    // 2. Leerer String
+    const char *s2 = "";
+    char *dup2 = ft_strdup(s2);
+    printf("Original: \"%s\"\n", s2);
+    printf("Kopie   : \"%s\"\n", dup2);
+    free(dup2);
+
+    // 3. String mit Leerzeichen
+    const char *s3 = "   \tHello\n42\t";
+    char *dup3 = ft_strdup(s3);
+    printf("Original: \"%s\"\n", s3);
+    printf("Kopie   : \"%s\"\n", dup3);
+    free(dup3);
+
+    // 4. Sehr langer String
+    const char *s4 = "DiesIstEinSehrLangerTextDerSicherMehrAlsEinNormalesWortEnthältUndAuchZahlen1234567890";
+    char *dup4 = ft_strdup(s4);
+    printf("Original: \"%s\"\n", s4);
+    printf("Kopie   : \"%s\"\n", dup4);
+    free(dup4);
     return 0;
 }
