@@ -6,11 +6,11 @@
 /*   By: jakobadrian <jakobadrian@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 08:07:57 by jakobadrian       #+#    #+#             */
-/*   Updated: 2025/06/12 08:17:41 by jakobadrian      ###   ########.fr       */
+/*   Updated: 2025/06/12 23:39:59 by jakobadrian      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 int ft_atoi(const char *str)
 {

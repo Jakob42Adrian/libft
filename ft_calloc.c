@@ -6,12 +6,12 @@
 /*   By: jakobadrian <jakobadrian@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 08:42:52 by jakobadrian       #+#    #+#             */
-/*   Updated: 2025/06/12 08:56:02 by jakobadrian      ###   ########.fr       */
+/*   Updated: 2025/06/12 23:40:19 by jakobadrian      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include <stdlib.h>
-# include <stddef.h>
+# include "libft.h"
 
 void ft_bzero(void *s, size_t n);
 void *ft_calloc(size_t count, size_t size)

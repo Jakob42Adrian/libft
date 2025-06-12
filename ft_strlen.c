@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadrian <jadrian@student.42wolfsburg.de>   +#+  +:+       +#+        */
+/*   By: jakobadrian <jakobadrian@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/09 17:47:49 by jadrian           #+#    #+#             */
-/*   Updated: 2025/06/09 17:51:36 by jadrian          ###   ########.fr       */
+/*   Updated: 2025/06/12 23:41:59 by jakobadrian      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

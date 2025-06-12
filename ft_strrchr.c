@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadrian <jadrian@student.42wolfsburg.de>   +#+  +:+       +#+        */
+/*   By: jakobadrian <jakobadrian@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 02:10:13 by jadrian           #+#    #+#             */
-/*   Updated: 2025/06/10 02:32:53 by jadrian          ###   ########.fr       */
+/*   Updated: 2025/06/12 23:42:34 by jakobadrian      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 char *ft_strrchr(const char *s, int c)
 {

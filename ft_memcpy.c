@@ -6,11 +6,11 @@
 /*   By: jakobadrian <jakobadrian@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 13:09:26 by jadrian           #+#    #+#             */
-/*   Updated: 2025/06/11 01:04:28 by jakobadrian      ###   ########.fr       */
+/*   Updated: 2025/06/12 23:41:06 by jakobadrian      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void *ft_memcpy(void *dst, const void *src, size_t n)
 {
