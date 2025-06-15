@@ -6,11 +6,13 @@
 /*   By: jakobadrian <jakobadrian@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 13:16:40 by jadrian           #+#    #+#             */
-/*   Updated: 2025/06/11 03:15:39 by jakobadrian      ###   ########.fr       */
+/*   Updated: 2025/06/15 13:04:55 by jakobadrian      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    return ((c >= 'A' && c <= 'Z') ? (c + 32) :c);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	return (c);
 }

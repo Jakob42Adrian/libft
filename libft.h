@@ -6,7 +6,7 @@
 /*   By: jakobadrian <jakobadrian@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/09 17:52:13 by jadrian           #+#    #+#             */
-/*   Updated: 2025/06/12 23:43:47 by jakobadrian      ###   ########.fr       */
+/*   Updated: 2025/06/15 11:11:04 by jakobadrian      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define LIBFT_H
 
 #include <stddef.h>
+#include <stdlib.h>
 
 size_t ft_strlen(const char *s);
 size_t ft_strlcpy(char *dst, const char *src, size_t size);
@@ -38,5 +39,9 @@ int ft_memcmp(const void *s1, const void *s2, size_t n);
 int ft_atoi(const char *str);
 void *ft_calloc(size_t count, size_t size);
 char *ft_strdup(const char *s1);
+char *ft_strtrim(char const *s1, char const *set);
+char *ft_substr(const char *s, unsigned int start, size_t len);
+char *ft_strjoin(const char *s1, const char *s2);
+char **ft_split(char const *s, char c);
 
 #endif

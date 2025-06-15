@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadrian <jadrian@student.42wolfsburg.de>   +#+  +:+       +#+        */
+/*   By: jakobadrian <jakobadrian@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 00:47:04 by jadrian           #+#    #+#             */
-/*   Updated: 2025/06/10 00:48:58 by jadrian          ###   ########.fr       */
+/*   Updated: 2025/06/15 11:57:57 by jakobadrian      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

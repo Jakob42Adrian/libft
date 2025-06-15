@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadrian <jadrian@student.42wolfsburg.de>   +#+  +:+       +#+        */
+/*   By: jakobadrian <jakobadrian@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/09 18:20:38 by jadrian           #+#    #+#             */
-/*   Updated: 2025/06/09 18:36:54 by jadrian          ###   ########.fr       */
+/*   Updated: 2025/06/15 11:57:27 by jakobadrian      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-	if((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 		return (1);
 	return (0);
 }

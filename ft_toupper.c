@@ -6,11 +6,13 @@
 /*   By: jakobadrian <jakobadrian@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 13:20:01 by jadrian           #+#    #+#             */
-/*   Updated: 2025/06/11 03:15:57 by jakobadrian      ###   ########.fr       */
+/*   Updated: 2025/06/15 13:06:59 by jakobadrian      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    return ((c >= 'a' && c <= 'z') ? (c - 32) : c);
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	return (c);
 }

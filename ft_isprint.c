@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadrian <jadrian@student.42wolfsburg.de>   +#+  +:+       +#+        */
+/*   By: jakobadrian <jakobadrian@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 00:55:58 by jadrian           #+#    #+#             */
-/*   Updated: 2025/06/10 00:58:06 by jadrian          ###   ########.fr       */
+/*   Updated: 2025/06/15 11:58:51 by jakobadrian      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);
